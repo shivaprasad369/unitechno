@@ -5,9 +5,9 @@ import React from "react"
 const contact = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <main>Contact - 7Creative</main>
-      </Head>
+      </Head> */}
       <Contact />
     </>
   )

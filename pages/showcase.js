@@ -5,9 +5,9 @@ import React from "react"
 const showcase = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <main>ShowCase - 7Creative</main>
-      </Head>
+      </Head> */}
       <ShowCase />
     </>
   )

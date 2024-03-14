@@ -4,9 +4,9 @@ import Head from "next/head"
 export default function Home() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <main>7Creative Desgin</main>
-      </Head>
+      </Head> */}
       <Hero />
     </>
   )

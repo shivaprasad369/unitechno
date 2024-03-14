@@ -12,9 +12,7 @@ const SinglePost = () => {
 
   return (
     <>
-      <Head>
-        <title>{post.title}</title>
-      </Head>
+      
       <section className='post-details bg-top'>
         <div className='container'>
           <div className='heading-title'>

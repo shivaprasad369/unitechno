@@ -5,9 +5,9 @@ import React from "react"
 const team = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <main>Team - 7Creative</main>
-      </Head>
+      </Head> */}
       <Team />
     </>
   )
