@@ -10,33 +10,25 @@ const Footer = () => {
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='creative' caption='7' className='logobg' />
+              {/* <TitleLogo title='Unitechno'  className='logobg' /> */}
+              <img src="./images/fotterLogo.png" style={{width:100}}/>
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Questions? Reach us <br /> Monday – Saturday from 10 am to 6 pm
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <h3>+91 63615 65206</h3>
               <br />
               <button className='button-primary'>Request for quote</button>
             </div>
             <ul>
               <h3>COMPANY</h3>
               <li>
-                <Link href='/'>About agency</Link>
-              </li>
-              <li>
-                <Link href='/'>Our team</Link>
+                <Link href='/'>About</Link>
               </li>
               <li>
                 <Link href='/'>Showcase</Link>
-              </li>
-              <li>
-                <Link href='/'>Blog</Link>
-              </li>
-              <li>
-                <Link href='/'>Demo design system</Link>
               </li>
               <li>
                 <Link href='/'>Contact</Link>
@@ -61,7 +53,7 @@ const Footer = () => {
               <h3>CONNECT</h3>
               <div className='connect'>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.facebook.com/unitechnocompany/'>
                     <BsFacebook size={25} />
                   </Link>
                 </li>
@@ -71,12 +63,12 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.instagram.com/unitechno_company/?hl=en'>
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.linkedin.com/company/unitechno-company/mycompany/'>
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>
@@ -85,13 +77,13 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+              <span>© 2024 THE UNITECHNO SOFTWARE DEVELOPMENT PVT LTD. ALL RIGHTS RESERVED.</span>
             </div>
-            <div className='connect'>
+            {/* <div className='connect'>
               <span>GORKCODER COMPANY</span>
               <span> &nbsp; | &nbsp; </span>
               <span>TERMS & CONDITIONS</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

@@ -7,13 +7,17 @@ import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
 import { BlogCard, Brand } from "@/components/router"
 import React from "react"
 
+// import bg from '../images/earth.png'
 const Hero = () => {
   return (
     <>
-      <section className='hero'>
+      <section className='hero relative'>
+        <img src={'../images/earth.png'} alt="" width={20} id="test" className="rotating w-[20rem] absolute transition" />
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
+        {/* <img src={'../images/stars.png'} alt="" className="stars"/> */}
+
+          <TitleLogo title='Unitechno' className='logobg' />
+          <h1 className='hero-title max-md:text-2xl'>WE BUILD DIGITAL EXPERIENCES</h1>
 
           <div className='sub-heading'>
             <TitleSm title='WEBSITES' /> <span>.</span>
@@ -22,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <section className='hero-sec'>
+      <section className='hero-sec '>
         <div className='container'>
           <div className='heading-title'>
             <Title title='The last digital agency you ll ever need' />
@@ -45,10 +49,10 @@ const Hero = () => {
       <ShowCase />
       <Brand />
 
-      <div className='text-center'>
+      {/* <div className='text-center'>
         <Title title='Latest news & articles' />
       </div>
-      <BlogCard />
+      <BlogCard /> */}
     </>
   )
 }

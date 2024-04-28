@@ -7,6 +7,7 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
+import { Avatar } from "@mui/material"
 
 function SampleNextArrow(props) {
   const { onClick } = props
@@ -65,9 +66,10 @@ const Testimonial = () => {
                   <div className='card'>
                     <div className='image'>
                       <div className='img'>
-                        <img src={user.cover} alt='' />
+                        {/* <img src={user.cover} alt='' /> */}
+                        <Avatar src="/broken-image.jpg" sx={{width:100,height:100}} />
                       </div>
-                      <div className='img-text'>
+                      <div className='img-text' >
                         <h3>{user.name}</h3>
                         <span>{user.post}</span>
                       </div>
