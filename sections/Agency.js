@@ -1,24 +1,50 @@
+"use client";
 import Banner from "@/components/Banner";
 import Brand from "@/components/Brand";
 import Testimonial from "@/components/Testimonial";
 import { Title, TitleSm } from "@/components/common/Title";
+import { motion } from "framer-motion";
 
 const Agency = () => {
   return (
     <>
       <section className="agency bg-top">
         <div className="container">
-          <div className="heading-title">
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.5, y: -50 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              y: 1,
+              transition: { duration: 1, type: "spring", ease: "easeInOut" },
+            }}
+            className="heading-title"
+          >
             <TitleSm title="ABOUT UNITECHNO" /> <br />
             <br />
             <Title
               title="The last digital agency you will ever need!"
               className="title-bg"
             />
-          </div>
+          </motion.div>
 
           <div className="content flex1">
-            <div className="left w-60 py">
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.5, x: -50 }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+                x: 0,
+                transition: {
+                  type: "spring",
+                  duration: 1,
+                  ease: "easeIn",
+                },
+              }}
+              className="left w-60 py"
+            >
               <TitleSm title="Turning your business ideas into smart digital products since 2018" />
               <p className="desc-p">
                 Unitechno is one of the professional Software Development
@@ -48,8 +74,23 @@ const Agency = () => {
                   <h3>Industry awards</h3>
                 </div>
               </div>
-            </div>
-            <div className="right w-40 ml">
+            </motion.div>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.5, x: 50 }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+                x: 0,
+                transition: {
+                  type: "spring",
+                  duration: 1,
+                  ease: "easeIn",
+                  delay: 0.3,
+                },
+              }}
+              className="right w-40 ml"
+            >
               <img
                 src="/images/logo.jpg"
                 alt="Img"
@@ -57,11 +98,20 @@ const Agency = () => {
                 width="100%"
                 height="95%"
               />
-            </div>
+            </motion.div>
           </div>
 
           <div className="content flex">
-            <div className="left w-40 py">
+            <motion.div
+             viewport={{ once: true }}
+             initial={{ opacity: 0, scale: 0.5, y: -50 }}
+             whileInView={{
+               opacity: 1,
+               scale: 1,
+               y: 1,
+               transition: { duration: 1, type: "spring", ease: "easeInOut" },
+             }}
+            className="left w-40 py">
               <img
                 src="/images/logo.jpg"
                 alt="Img"
@@ -69,8 +119,22 @@ const Agency = () => {
                 width="100%"
                 height="100%"
               />
-            </div>
-            <div className="right w-60 ml">
+            </motion.div>
+            <motion.div 
+            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.5, x: 50 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                duration: 1,
+                ease: "easeIn",
+                delay: 0.3,
+              },
+            }}
+            className="right w-60 ml">
               <TitleSm title="Our mission" />
               <br />
               <p className="misson-p">
@@ -83,7 +147,7 @@ const Agency = () => {
                 in strategic mix of professionals from technology, consulting,
                 business management and client servicing domains.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

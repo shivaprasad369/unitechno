@@ -1,11 +1,15 @@
 import Link from "next/link"
 import { TitleSm } from "./Title"
 import { HiOutlineArrowRight } from "react-icons/hi"
+import { motion } from "framer-motion"
 
-export const Card = ({ data, caption, show, path }) => {
+export const Card = ({ data, caption, show, path,delay }) => {
   return (
     <>
-      <div className='card'>
+      <motion.div 
+      viewport={{once:true}}
+      initial={{opacity:0,scale:0.5}} whileInView={{opacity:1,scale:1,transition:{delay:0.3*delay,type:'spring',ease:'easeIn'}}}
+      className='card'>
         <div className='card-img'>
           <img src={data.cover} alt={data.title} />
         </div>
@@ -30,7 +34,7 @@ export const Card = ({ data, caption, show, path }) => {
             </ul>
           )}
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }

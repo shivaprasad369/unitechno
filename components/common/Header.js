@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { TitleLogo } from "./Title";
 import { useRouter } from "next/router";
@@ -66,9 +67,9 @@ const Header = () => {
             >
               Contact
             </Link>
-            <button className="button-primary">
+            <motion.button whileHover={{scale:1.09,transition:{type:'tween',ease:'easeInOut',duration:1}}} className="button-primary">
               <Link href={"/contact"}>book a consultation</Link>
-            </button>
+            </motion.button>
           </nav>
           <button className="headerBtn" onClick={() => setOpen(!open)}>
             {open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}

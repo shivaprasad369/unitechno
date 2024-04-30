@@ -1,4 +1,6 @@
+"use client";
 import { Title, TitleSm } from "@/components/common/Title";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import {
@@ -70,7 +72,21 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-            <div className="right w-70">
+            <motion.div 
+            viewport={{ once: true }}
+            initial={{ opacity: 0, scale: 0.5, y: 50 }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                duration: 1,
+                ease: "easeIn",
+                delay: 0.3,
+              },
+            }}
+            className="right w-70">
               <TitleSm title="Make an online enquiry" />
               <p className="desc-p">
                 Got questions? Ideas? Fill out the form below to get our
@@ -104,7 +120,7 @@ const Contact = () => {
                 </div>
                 <button className="button-primary">Submit</button>
               </form>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
